@@ -1,6 +1,7 @@
 module.exports = {
   // mode: "jit",
   purge: [
+    "./app.vue",
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
