@@ -1,5 +1,16 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-    srcDir: './'
+  css: ['~/assets/tailwind.css'],
+  
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
 })
